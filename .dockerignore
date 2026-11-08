@@ -1,0 +1,14 @@
+.git
+.gitignore
+.env
+.env.example
+.DS_Store
+**/.DS_Store
+.idea
+frontend/node_modules
+frontend/src
+backend/src
+backend/.gradle
+backend/build/*
+!backend/build/install
+deploy/*.md

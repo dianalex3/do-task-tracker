@@ -1,0 +1,11 @@
+.env
+.env.local
+node_modules/
+frontend/dist/
+backend/build/
+.gradle/
+.idea/
+*.iml
+*.tsbuildinfo
+.pg.log
+.DS_Store

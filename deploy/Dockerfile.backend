@@ -1,0 +1,11 @@
+FROM eclipse-temurin:17-jre
+
+WORKDIR /app
+RUN useradd --system --uid 10001 --create-home app
+COPY backend/build/install/do-backend/ /app/
+RUN chown -R app:app /app
+
+USER app
+ENV JAVA_OPTS="-Xms96m -Xmx320m"
+EXPOSE 8080
+ENTRYPOINT ["./bin/do-backend"]
